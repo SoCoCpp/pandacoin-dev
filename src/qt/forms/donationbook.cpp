@@ -223,21 +223,6 @@ void DonationBookPage::onAddressBookVerifyMessage()
     emit onVerifyMessage(selectedAccountAddress);
 }
 
-void DonationBookPage::onAddressBookNewAddress()
-{
-    if(!model)
-        return;
-    EditAddressDialog dlg(EditAddressDialog::NewSendingAddress, this);
-    dlg.setModel(model->getAddressTableModel());
-    if(dlg.exec())
-    {
-        QString newAddressToSelect = dlg.getAddress();
-        //ui->address_list->selectionModel()->setCurrentIndex(filterModel->index(newAddressToSelect,0),QItemSelectionModel::Select);
-        onSelectionChanged();
-        ui->address_book_view_frame->setVisible(false);
-    }
-}
-
 void DonationBookPage::updateDisplayUnit()
 {
     if(model && model->getOptionsModel())

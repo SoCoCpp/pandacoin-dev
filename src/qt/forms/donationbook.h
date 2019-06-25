@@ -28,7 +28,6 @@ private slots:
     void onAddressBookCopyToClipboard();
     void onAddressBookShowQRCode();
     void onAddressBookVerifyMessage();
-    void onAddressBookNewAddress();
     void updateDisplayUnit();
 
 signals:
