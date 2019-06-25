@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>893</width>
-    <height>433</height>
+    <height>473</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -267,33 +267,39 @@
             </widget>
            </item>
            <item>
-           <spacer name="verticalSpacer_8">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
+            <spacer name="verticalSpacer_71">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
            </item>
            <item>
-            <widget class="QLabel" name="donationbook_account_website_heading">
+            <widget class="QLabel" name="donationbook_account_description_heading">
              <property name="text">
-              <string notr="true">Website</string>
+              <string notr="true">Description</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="donationbook_account_website_value">
+            <widget class="QLabel" name="donationbook_account_description_value">
              <property name="text">
-              <string notr="true">(no website)</string>
+              <string notr="true">(no description)</string>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
              </property>
             </widget>
            </item>
-            <item>
+           <item>
             <spacer name="verticalSpacer_8">
              <property name="orientation">
               <enum>Qt::Vertical</enum>

@@ -121,9 +121,11 @@ void DonationBookPage::onSelectionChanged()
 {
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
     QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
+    QString selectedAccountDescription = model->getAddressTableModel()->descriptionForLabel(selectedAccountLabel);
 
     ui->account_address_label->setText(selectedAccountLabel);
     ui->addressbook_account_address_value->setText(selectedAccountAddress);
+    ui->donationbook_account_description_value->setText(selectedAccountDescription);
 
     ui->address_book_view_frame->setVisible(true);
 }
